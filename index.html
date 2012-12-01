@@ -1,5 +1,11 @@
+<!-- 
+	Sherlock Demo Page.
+	Copyright (c) 2012 Tabule, Inc. 
+-->
+<!DOCTYPE html>
 <html>
 	<head>
+		<title>Sherlock.js - Demo</title>
 		<script type="text/javascript" src="watson.js"></script>
 		<script type="text/javascript" src="sherlock.js"></script>
 
@@ -37,7 +43,7 @@
 
 	<body style="text-align: center; font-family: 'Helvetica', sans-serif;">
 <p style="color: #454545; font-weight: bold; padding: 20px 0 0 0;">It's quite elementary, my dear Watson.</p>
-<p style="padding-bottom: 10px; font-size: 14px; color: #878787"><a href="#">See GitHub</a> for documentation and source code.</p>
+<p style="padding-bottom: 10px; font-size: 14px; color: #878787"><a href="https://github.com/Tabule/Sherlock/">See GitHub</a> for documentation and source code.</p>
 
 <input type="text" style="width: 500px;" placeholder="Create an event... e.g. My mom's birthday is on the 27th." id="quickadd" onkeypress="useSherlock(event,this.value)" />
 <input type="submit" value="Create" onClick="useSherlock({keyCode: 13}, document.getElementById('quickadd').value)" />
@@ -58,5 +64,7 @@
 	<p>Bake a cake tomorrow.</p>
 	<p>Use Tabule today!</p>
 </div>
+
+<p id='footer' style="color: #878787; font-size:12px; padding: 50px 0;">Built with love by <a href='https://tabuleapp.com'>Tabule</a></p>
 	</body>
 </html>
