@@ -1,6 +1,6 @@
 <!-- 
   Sherlock Demo Page.
-  Copyright (c) 2014 Tabule, Inc. 
+  Copyright (c) 2016 Neil Gupta
 -->
 <!DOCTYPE html>
 <html>
@@ -95,11 +95,11 @@
   <body>
     <div id="container">
       <h1>It's quite elementary, my dear Watson.</h1>
-      <h2><a href="https://github.com/Tabule/Sherlock/">See GitHub</a> for documentation and source code.</h2>
+      <h2><a href="https://github.com/neilgupta/Sherlock/">See GitHub</a> for documentation and source code.</h2>
 
       <div id="input">
         <input type="text" placeholder="Create an event... e.g. My mom's birthday is on the 27th." id="quickadd" onkeypress="useSherlock(event,this.value)" />
-        <input type="submit" value="Create" onClick="useSherlock({keyCode: 13}, document.getElementById('quickadd').value)" />
+        <input type="submit" value="Parse" onClick="useSherlock({keyCode: 13}, document.getElementById('quickadd').value)" />
       </div>
 
       <div id="response"></div>
@@ -119,7 +119,7 @@
         <p>Use Tabule today!</p>
       </div>
 
-      <p id='footer'>Made by <a href='https://tabuleapp.com'>Tabule</a></p>
+      <p id='footer'>Made by <a href='http://metamorphium.com'>Neil Gupta</a> &#128040;</p>
     </div>
   </body>
 </html>
