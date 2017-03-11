@@ -1,7 +1,7 @@
 /*!
  * Sherlock
- * Copyright (c) 2016 Neil Gupta
- * Version 1.3.4
+ * Copyright (c) 2017 Neil Gupta
+ * Version 1.3.5
  */
 
 var Sherlock = (function() {
@@ -22,7 +22,7 @@ var Sherlock = (function() {
     shortForm: /\b(0?[1-9]|1[0-2])\/([1-2]\d|3[0-1]|0?[1-9])\/?(\d{2,4})?\b/,
 
     // tue, tues, tuesday
-    weekdays: /(?:(next|last) (?:week (?:on )?)?)?\b(sun|mon|tue(?:s)?|wed(?:nes)?|thurs|fri|sat(?:ur)?)(?:day)?\b/,
+    weekdays: /(?:(next|last) (?:week (?:on )?)?)?\b(sun|mon|tue(?:s)?|wed(?:nes)?|thu(?:rs?)?|fri|sat(?:ur)?)(?:day)?\b/,
     relativeDateStr: "((?:next|last|this) (?:week|month|year)|tom(?:orrow)?|tmrw|tod(?:ay)?|(?:right )?now|tonight|day after (?:tom(?:orrow)?|tmrw)|yest(?:erday)?|day before yest(?:erday)?)",
     inRelativeDateStr: "(\\d{1,4}|a) (day|week|month|year)s? ?(ago|old)?",
 
