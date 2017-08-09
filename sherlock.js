@@ -659,11 +659,11 @@ var Sherlock = (function() {
     // parses a string and returns an object defining the basic event
     // with properties: eventTitle, startDate, endDate, isAllDay
     // plus anything Watson adds on...
-    parse: function(str) {
+    parse: function(str, refDate) {
       // check for null input
       if (str === null) str = '';
 
-      var date = getNow(),
+      var date = refDate || getNow(),
         // Check if Watson is around. If not, pretend like he is to keep Sherlock company.
         result = (typeof Watson !== 'undefined') ? Watson.preprocess(str) : [str, {}],
         str = result[0],
